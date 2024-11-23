@@ -15,14 +15,30 @@ header {
   ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 0.25rem;
 
-    li {
+    .nav-button {
       font-family: "Ubuntu Sans";
       font-optical-sizing: auto;
       font-weight: 800;
       font-style: Bold;
       font-size: 1.3rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $primary;
+      }
+
+      a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+          color: $bg;
+        }
+      }
     }
   }
 }
