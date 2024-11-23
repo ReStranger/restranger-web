@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTheme } from "./utils/themeContext";
 import Header from "./components/header/Header";
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark");
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  const { theme, toggleTheme } = useTheme();
   return <Header theme={theme} toggleTheme={toggleTheme} />;
 };
 
