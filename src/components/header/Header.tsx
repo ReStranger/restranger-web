@@ -1,16 +1,19 @@
+import React from "react";
 import "../../styles/components/header.scss";
+import NavButton from "./NavButton";
+
 export const Header = () => {
-    return (
-        <header>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Project</li>
-                    <li>Contacts</li>
-                </ul>
-            </nav>
-        </header>
-    );
+  return (
+    <header>
+      <nav>
+        <ul>
+          <NavButton name="Home" section="home" />
+          <NavButton name="About me" section="about_me" />
+          <NavButton name="Projects" section="projects" />
+          <NavButton name="Contacts" section="contacts" />
+        </ul>
+      </nav>
+    </header>
+  );
 };
 export default Header;
