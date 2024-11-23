@@ -1,0 +1,28 @@
+@use "../_variables.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $bg;
+  color: $primary;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    li {
+      font-family: "Ubuntu Sans";
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: Bold;
+      font-size: 1.3rem;
+    }
+  }
+}
