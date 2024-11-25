@@ -9,11 +9,7 @@ interface HeaderProps {
   toggleTheme: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = () => {
-  const [theme, setTheme] = React.useState<"light" | "dark">("dark");
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   return (
     <header className={`header ${theme}`}>
       <div className={`logo-containter ${theme}`}>

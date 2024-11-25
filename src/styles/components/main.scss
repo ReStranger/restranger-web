@@ -1,0 +1,13 @@
+@use "../_variables.scss" as *;
+
+.main {
+  min-height: 100vh;
+
+  &.light {
+    background-color: $light-bg-darkest;
+  }
+
+  &.dark {
+    background-color: $dark-bg-darkest;
+  }
+}
