@@ -11,7 +11,7 @@ interface WhoamiContentProps {
 }
 const WhoamiContent: React.FC<WhoamiContentProps> = ({ theme }) => {
   return (
-    <>
+    <div className="whoami">
       <div className={`whoami-header ${theme}`}>
         <img src={user_solid} alt="user-solid" />
         <h3>About me</h3>
@@ -22,14 +22,10 @@ const WhoamiContent: React.FC<WhoamiContentProps> = ({ theme }) => {
           linux and low-level programming languages
         </span>
       </div>
-    </>
+    </div>
   );
 };
 const Whoami: React.FC<WhoamiProps> = ({ theme }) => {
-  return (
-    <div className="whoami">
-      <AboutMeCard theme={theme} entry={<WhoamiContent theme={theme} />} />
-    </div>
-  );
+  return <AboutMeCard theme={theme} entry={<WhoamiContent theme={theme} />} />;
 };
 export default Whoami;

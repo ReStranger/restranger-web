@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../styles/components/main/about-me/my-prog-lang.scss";
 import AboutMeCard from "../../main/about-me/AboutMeCard";
+import code_solid from "../../../assets/img/code-solid.svg";
 import c_lang from "../../../assets/img/c-lang.png";
 import rust from "../../../assets/img/rust.png";
 import python from "../../../assets/img/python.png";
@@ -44,7 +45,8 @@ const MyProgLangContent: React.FC<MyProgLangContentProps> = ({ theme }) => {
   return (
     <>
       <div className={`my-prog-lang-header ${theme}`}>
-        <h3>Programming Languages</h3>
+        <img src={code_solid} alt="code-solid" />
+        <h3>Program Languages</h3>
       </div>
       <div className={`my-prog-lang-content ${theme}`}>
         <ProgLangsCLang />
