@@ -3,33 +3,45 @@
 
   .my-prog-lang-header {
     h3 {
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       margin-top: 0rem;
       font-size: 1.5rem;
       margin-left: 0.5rem;
+
+      &:hover {
+        font-size: 1.6rem;
+      }
     }
   }
 
   .my-prog-lang-content {
+    cursor: pointer;
     display: flex;
+    min-height: 4rem;
 
     .prog-lang {
+      position: relative;
       display: grid;
-      margin: 0.5rem;
-      grid-template-rows: 1fr 1fr;
+      margin: 0rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      // grid-template-rows: 1fr 1fr;
 
-      .prog-lang-icon {
-        img {
-          width: 4rem;
-        }
+      .prog-lang-icon img {
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        width: 4rem;
 
-        .prog-lang-name {
-          h4 {
-            text-align: center;
-            margin-top: 0rem;
-            font-size: 1.5rem;
-            margin-left: 0.5rem;
-          }
+        &:hover {
+          width: 4.5rem;
         }
+      }
+
+
+      h4 {
+        margin: 0.2rem;
+        text-align: center;
+
+        &:hover {}
       }
     }
   }

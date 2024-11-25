@@ -1,10 +1,10 @@
 import React from "react";
 import "../../../styles/components/main/about-me/my-prog-lang.scss";
 import AboutMeCard from "../../main/about-me/AboutMeCard";
-import c_lang from "../../../assets/img/c-lang.svg";
-import rust from "../../../assets/img/rust.svg";
-import python from "../../../assets/img/python.svg";
-import typescript from "../../../assets/img/typescript.svg";
+import c_lang from "../../../assets/img/c-lang.png";
+import rust from "../../../assets/img/rust.png";
+import python from "../../../assets/img/python.png";
+import typescript from "../../../assets/img/typescript.png";
 
 interface MyProgLangProps {
   theme: "light" | "dark";
@@ -21,9 +21,7 @@ const ProgLang: React.FC<ProgLangProps> = ({ icon, name }) => {
   return (
     <div className="prog-lang">
       <div className="prog-lang-icon">{icon}</div>
-      <div className="prog-lang-name">
-        <h4>{name}</h4>
-      </div>
+      <h4>{name}</h4>
     </div>
   );
 };
