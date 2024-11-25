@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/restranger-web/static/css/main.7e277e7d.css",
+    "main.js": "/restranger-web/static/js/main.8d6b78f8.js",
+    "static/js/453.dfe7bcc2.chunk.js": "/restranger-web/static/js/453.dfe7bcc2.chunk.js",
+    "static/media/python.png": "/restranger-web/static/media/python.c44b9b809ebf766cbb4f.png",
+    "static/media/nix.png": "/restranger-web/static/media/nix.366735eca1e1d82d7e01.png",
+    "static/media/linux.png": "/restranger-web/static/media/linux.efbd69901c0ffb6d2456.png",
+    "static/media/rust.png": "/restranger-web/static/media/rust.222c8af9aea6974c9813.png",
+    "static/media/typescript.png": "/restranger-web/static/media/typescript.52ea0bc40ba11d507e7d.png",
+    "static/media/logo1024.svg": "/restranger-web/static/media/logo1024.614811516a3bc51bd2db5a07afd91e72.svg",
+    "static/media/git.svg": "/restranger-web/static/media/git.29ee81f3816dc8c467d2fe7c26ba1f4c.svg",
+    "index.html": "/restranger-web/index.html",
+    "static/media/code-solid.svg": "/restranger-web/static/media/code-solid.d88937af172a28fc0bb14f5ab2be9e04.svg",
+    "static/media/bolt-solid.svg": "/restranger-web/static/media/bolt-solid.1f2b78151f2f4e3d37738a5a042b0628.svg",
+    "static/media/user-solid.svg": "/restranger-web/static/media/user-solid.2da295cf61e9d4db08e1ec78a873ac13.svg",
+    "main.7e277e7d.css.map": "/restranger-web/static/css/main.7e277e7d.css.map",
+    "main.8d6b78f8.js.map": "/restranger-web/static/js/main.8d6b78f8.js.map",
+    "453.dfe7bcc2.chunk.js.map": "/restranger-web/static/js/453.dfe7bcc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e277e7d.css",
+    "static/js/main.8d6b78f8.js"
+  ]
+}
