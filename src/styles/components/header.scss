@@ -32,7 +32,7 @@
 
     .logo {
       margin: 0.8rem;
-      border-radius: 0.5rem;
+      border-radius: 0.7rem;
       padding: 0.1rem 0.2rem 0rem;
 
       img {
@@ -57,7 +57,15 @@
       font-size: 1.2rem;
       transform: translateX(-50%);
       opacity: 0;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &.light .logo-cliding-text h1 {
+      color: $light-primary;
+    }
+
+    &.dark .logo-cliding-text h1 {
+      color: $dark-primary;
     }
   }
 
@@ -77,8 +85,8 @@
         font-style: Bold;
         font-size: 1.3rem;
         padding: 0.25rem 0.5rem;
-        border-radius: 0.5rem;
-        transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        border-radius: 0.7rem;
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
         &:hover {
           cursor: pointer;
@@ -126,6 +134,81 @@
           }
         }
       }
+    }
+  }
+
+  .theme-toggle {
+    justify-self: end;
+    background: none;
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &.light {
+      background: $light-bg;
+      color: $light-primary;
+
+      .toggle-circle {
+        transform: translateY(0) rotate(0);
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 0px 2px $light-primary;
+      }
+
+      &:active {
+        background-color: $light-primary;
+        color: $light-bg;
+      }
+    }
+
+    &.dark {
+      background: $dark-bg;
+      color: $dark-primary;
+
+      .toggle-circle {
+        transform: translateY(0) rotate(360deg);
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 0px 2px $dark-primary;
+      }
+
+      &:active {
+        background-color: $dark-primary;
+        color: $dark-bg;
+      }
+    }
+
+    .toggle-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
     }
   }
 }
