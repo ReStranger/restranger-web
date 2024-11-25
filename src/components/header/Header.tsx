@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/components/header.scss";
+import "../../styles/components/header/header.scss";
 import logo1024 from "../../assets/img/logo1024.svg";
 import NavButton from "./NavButton";
 import ThemeToggle from "./ThemeToggle";

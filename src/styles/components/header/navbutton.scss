@@ -1,0 +1,58 @@
+@use "../../variables" as *;
+
+.nav-button {
+  font-family: "Ubuntu Sans";
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: Bold;
+  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.7rem;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.light {
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px $light-primary;
+    }
+
+    &:active {
+      background-color: $light-primary;
+      color: $light-bg;
+    }
+  }
+
+  &.dark {
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px $dark-primary;
+    }
+
+    &:active {
+      background-color: $dark-primary;
+      color: $dark-bg;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &.light a {
+    color: $light-primary;
+
+    &:active {
+      color: $light-bg
+    }
+  }
+
+  &.dark a {
+    color: $dark-primary;
+
+    &:active {
+      color: $dark-bg
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/components/header/themetoggle.scss";
 
 interface NavButtonProps {
   theme: "light" | "dark";

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/components/header/navbutton.scss";
 
 interface NavButtonProps {
   name: string;

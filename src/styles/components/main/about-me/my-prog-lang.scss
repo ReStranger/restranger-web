@@ -1,0 +1,36 @@
+.my-prog-lang {
+  display: flex;
+
+  .my-prog-lang-header {
+    h3 {
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .my-prog-lang-content {
+    display: flex;
+
+    .prog-lang {
+      display: grid;
+      margin: 0.5rem;
+      grid-template-rows: 1fr 1fr;
+
+      .prog-lang-icon {
+        img {
+          width: 4rem;
+        }
+
+        .prog-lang-name {
+          h4 {
+            text-align: center;
+            margin-top: 0rem;
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu Sans", sans-serif;
+  letter-spacing: 0.05em;
+
+  .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    width: 2px;
+    background-color: currentColor;
+    animation: blink 0.7s steps(1) infinite;
+    vertical-align: bottom;
+    height: 1.2em;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
