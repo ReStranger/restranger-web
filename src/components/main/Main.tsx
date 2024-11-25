@@ -15,6 +15,7 @@ const Main: React.FC<MainProps> = ({ theme }) => {
           <TypingEffect
             base="re:"
             phases_massive={["android", "code", "design", "web", "rising"]}
+            theme={theme}
           />
         </div>
         <AboutMe theme={theme} />

@@ -4,11 +4,13 @@ import "../styles/utils/typingeffect.scss";
 interface TypingEffectProps {
   base: string;
   phases_massive: string[];
+  theme: "light" | "dark";
 }
 
 const TypingEffect: React.FC<TypingEffectProps> = ({
   base = "",
   phases_massive = [],
+  theme,
 }) => {
   const baseText = base;
   const phrases: string[] = phases_massive;
@@ -65,7 +67,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
   }, [charIndex, isDeleting, phraseIndex, baseText, phrases]);
 
   return (
-    <div className="typing-effect">
+    <div className={`typing-effect ${theme}`}>
       {currentPhrase}
       <span className="cursor">|</span>
     </div>
