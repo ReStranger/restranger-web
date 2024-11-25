@@ -1,6 +1,7 @@
 {
   "name": "restranger-web",
   "version": "0.1.0",
+  "homepage": "https://restranger.github.io/restranger-web/",
   "private": true,
   "type": "module",
   "dependencies": {
@@ -18,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "bun run build",
+    "deploy": "bunx gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +42,7 @@
     "@eslint/js": "^9.15.0",
     "eslint": "^9.15.0",
     "eslint-plugin-react": "^7.37.2",
+    "gh-pages": "^6.2.0",
     "globals": "^15.12.0",
     "node-sass": "^9.0.0",
     "sass": "^1.81.0",
