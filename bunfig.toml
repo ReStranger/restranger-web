@@ -1,2 +1,5 @@
+[install]
+frozenLockfile = true
+
 [install.lockfile]
 print = "yarn"
