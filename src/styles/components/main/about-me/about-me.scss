@@ -2,4 +2,11 @@
 
 .about-me {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+
+  @media(max-width: 1215px) {
+    justify-content: center;
+  }
 }

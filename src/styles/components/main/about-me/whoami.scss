@@ -50,6 +50,10 @@
     &.dark h1 {
       color: $light-fg;
     }
+
+    @media(max-width: 820px) {
+      justify-content: center;
+    }
   }
 
   .whoami-content {
@@ -69,5 +73,23 @@
     &.dark span {
       color: $dark-fg;
     }
+
+    @media(max-width: 820px) {
+      justify-content: center;
+    }
+  }
+
+  @media(max-width: 1215px) {
+    min-width: 800px;
+  }
+
+  @media(max-width: 1050px) {
+    min-width: 600px;
+  }
+
+  @media(max-width: 820px) {
+    justify-content: center;
+    width: 100%;
+    min-width: 0px;
   }
 }

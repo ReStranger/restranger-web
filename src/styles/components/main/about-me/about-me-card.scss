@@ -3,8 +3,8 @@
 .about-me-card {
   padding: 2rem;
   border-radius: 1rem;
-  max-width: 30rem;
   margin: 1rem;
+  flex: 1 1 19rem;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &.light {
@@ -22,6 +22,28 @@
 
     &:hover {
       box-shadow: inset 0 0 0 3px rgba(203, 166, 247, 1), 0 0 30px 0 rgba(203, 166, 247, 0.7);
+    }
+  }
+
+
+  @for $i from 1 through 15 {
+    @media (max-width: #{825 - 10 * $i}px) {
+      min-width: #{100 - 5 * $i}vh;
+      // max-width: #{90 - 5 * $i}vh;
+
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width: 485px) {
+    flex: 1 1 auto;
+    min-width: 0rem;
+    justify-content: center;
+  }
+
+  @for $i from 0 through 8 {
+    @media (max-width: #{400 - 10 * $i}px) {
+      max-width: #{18 - $i}rem;
     }
   }
 }

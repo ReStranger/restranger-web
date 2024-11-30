@@ -41,12 +41,17 @@
       font-size: 1.5rem;
       margin-left: 0.5rem;
     }
+
+    @media(max-width: 820px) {
+      justify-content: center;
+    }
   }
 
   .my-prog-lang-content {
     cursor: pointer;
     display: flex;
     min-height: 4rem;
+    flex-wrap: wrap;
 
     .prog-lang {
       position: relative;
@@ -69,5 +74,19 @@
         text-align: center;
       }
     }
+
+    @media(max-width: 820px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 400px) {
+      flex-basis: 100%;
+      align-items: center;
+    }
+  }
+
+  @media(max-width: 820px) {
+    justify-content: center;
+    width: 100%;
   }
 }

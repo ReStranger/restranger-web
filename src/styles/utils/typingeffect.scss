@@ -28,6 +28,12 @@
   &:hover {
     cursor: pointer;
     font-size: 4.5rem;
+
+    @for $i from 1 through 15 {
+      @media (max-width: #{825 - 10 * $i}px) {
+        font-size: #{4.5 - 0.1 * $i}rem;
+      }
+    }
   }
 
   .cursor {
@@ -42,6 +48,13 @@
   @keyframes blink {
     50% {
       opacity: 0;
+    }
+  }
+
+  @for $i from 1 through 15 {
+    @media (max-width: #{825 - 10 * $i}px) {
+      margin-left: #{2 - 0.1 * $i}rem;
+      font-size: #{4 - 0.1 * $i}rem;
     }
   }
 }

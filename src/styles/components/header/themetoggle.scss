@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 .theme-toggle {
+  grid-column: 3;
   justify-self: end;
   background: none;
   border: none;
