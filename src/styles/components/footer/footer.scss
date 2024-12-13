@@ -1,6 +1,65 @@
+@use "../../variables" as *;
+
 .footer {
-  background-color: #333;
-  color: #fff;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  &.light {
+    background-color: $light-bg;
+    color: $light-fg;
+  }
+
+  &.dark {
+    background-color: $dark-bg;
+    color: $dark-fg;
+  }
+
+  .footer-wrapper {
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+    .contact-box {
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      flex-wrap: wrap;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin: 10px;
+      padding: 5px;
+      max-width: 100px;
+      border-radius: 15px;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        padding-right: 5px;
+      }
+
+      a {
+        all: unset;
+        font-weight: bold;
+      }
+
+      &.light {
+        background-color: transparent;
+
+        a {
+          color: $light-fg;
+        }
+      }
+
+      &.dark {
+        background-color: $dark-primary;
+
+        a {
+          color: $dark-bg;
+        }
+      }
+    }
+  }
 }
