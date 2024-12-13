@@ -9,7 +9,7 @@ interface WhoamiProps {
 interface WhoamiContentProps {
   theme: "light" | "dark";
 }
-const WhoamiContent: React.FC<WhoamiContentProps> = ({ theme }) => {
+const WhoamiContent = ({ theme }: WhoamiContentProps) => {
   return (
     <div className="whoami">
       <div className={`whoami-header ${theme}`}>
@@ -25,7 +25,7 @@ const WhoamiContent: React.FC<WhoamiContentProps> = ({ theme }) => {
     </div>
   );
 };
-const Whoami: React.FC<WhoamiProps> = ({ theme }) => {
+const Whoami = ({ theme }: WhoamiProps) => {
   return <AboutMeCard theme={theme} entry={<WhoamiContent theme={theme} />} />;
 };
 export default Whoami;

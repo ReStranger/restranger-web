@@ -6,7 +6,7 @@ interface AboutMeCardProps {
   entry: JSX.Element;
 }
 
-const AboutMeCard: React.FC<AboutMeCardProps> = ({ theme, entry }) => {
+const AboutMeCard = ({ theme, entry }: AboutMeCardProps) => {
   return <div className={`about-me-card ${theme}`}>{entry}</div>;
 };
 

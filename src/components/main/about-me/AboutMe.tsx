@@ -7,7 +7,7 @@ import MySkills from "./MySkills";
 interface AboutMeProps {
   theme: "light" | "dark";
 }
-const AboutMe: React.FC<AboutMeProps> = ({ theme }) => {
+const AboutMe = ({ theme }: AboutMeProps) => {
   return (
     <div className="about-me">
       <Whoami theme={theme} />

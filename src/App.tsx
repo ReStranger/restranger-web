@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 
-const App: React.FC = () => {
+const App = () => {
   const [theme, setTheme] = React.useState<"light" | "dark">("dark");
 
   const toggleTheme = () => {

@@ -18,7 +18,7 @@ interface ProgLangProps {
   icon: JSX.Element;
   name: string;
 }
-const ProgLang: React.FC<ProgLangProps> = ({ icon, name }) => {
+const ProgLang = ({ icon, name }: ProgLangProps) => {
   return (
     <div className="prog-lang">
       <div className="prog-lang-icon">{icon}</div>
@@ -41,7 +41,7 @@ const ProgLangsTS = () => {
 const ProgLangsPython = () => {
   return <ProgLang icon={<img src={python} alt="python" />} name="python" />;
 };
-const MyProgLangContent: React.FC<MyProgLangContentProps> = ({ theme }) => {
+const MyProgLangContent = ({ theme }: MyProgLangContentProps) => {
   return (
     <>
       <div className={`my-prog-lang-header ${theme}`}>
@@ -58,7 +58,7 @@ const MyProgLangContent: React.FC<MyProgLangContentProps> = ({ theme }) => {
   );
 };
 
-const MyProgLang: React.FC<MyProgLangProps> = ({ theme }) => {
+const MyProgLang = ({ theme }: MyProgLangProps) => {
   return (
     <div className="my-prog-lang">
       <AboutMeCard theme={theme} entry={<MyProgLangContent theme={theme} />} />

@@ -7,7 +7,7 @@ interface NavButtonProps {
   theme: "light" | "dark";
 }
 
-const NavButton: React.FC<NavButtonProps> = ({ name, section, theme }) => {
+const NavButton = ({ name, section, theme }: NavButtonProps) => {
   return (
     <li className={`nav-button ${theme}`}>
       <a href={`#${section}`}>{name}</a>

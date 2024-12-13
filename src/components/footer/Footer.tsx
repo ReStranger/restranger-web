@@ -4,7 +4,7 @@ interface FooterProps {
   theme: "light" | "dark";
 }
 
-const Footer: React.FC<FooterProps> = ({ theme }) => {
+const Footer = ({ theme }: FooterProps) => {
   return (
     <footer className={`footer ${theme}`}>
       <div></div>

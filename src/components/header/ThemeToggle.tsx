@@ -6,7 +6,7 @@ interface NavButtonProps {
   toggleTheme: () => void;
 }
 
-const NavButton: React.FC<NavButtonProps> = ({ theme, toggleTheme }) => {
+const NavButton = ({ theme, toggleTheme }: NavButtonProps) => {
   return (
     <button
       className={`theme-toggle ${theme}`}

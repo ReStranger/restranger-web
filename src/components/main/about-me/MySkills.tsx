@@ -17,7 +17,7 @@ interface SkillsProps {
   icon: JSX.Element;
   name: string;
 }
-const Skills: React.FC<SkillsProps> = ({ icon, name }) => {
+const Skills = ({ icon, name }: SkillsProps) => {
   return (
     <div className="skills">
       <div className="skills-icon">{icon}</div>
@@ -35,7 +35,7 @@ const SkillsNix = () => {
 const SkillsLinux = () => {
   return <Skills icon={<img src={linux} alt="linux" />} name="Linux" />;
 };
-const MySkillsContent: React.FC<MySkillsContentProps> = ({ theme }) => {
+const MySkillsContent = ({ theme }: MySkillsContentProps) => {
   return (
     <>
       <div className={`my-skills-header ${theme}`}>
@@ -51,7 +51,7 @@ const MySkillsContent: React.FC<MySkillsContentProps> = ({ theme }) => {
   );
 };
 
-const MySkills: React.FC<MySkillsProps> = ({ theme }) => {
+const MySkills = ({ theme }: MySkillsProps) => {
   return (
     <div className="my-skills">
       <AboutMeCard theme={theme} entry={<MySkillsContent theme={theme} />} />

@@ -7,11 +7,11 @@ interface TypingEffectProps {
   theme: "light" | "dark";
 }
 
-const TypingEffect: React.FC<TypingEffectProps> = ({
+const TypingEffect = ({
   base = "",
   phases_massive = [],
   theme,
-}) => {
+}: TypingEffectProps) => {
   const baseText = base;
   const phrases: string[] = phases_massive;
   const [currentPhrase, setCurrentPhrase] = useState("");

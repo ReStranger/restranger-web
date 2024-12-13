@@ -7,7 +7,7 @@ interface MainProps {
   theme: "light" | "dark";
 }
 
-const Main: React.FC<MainProps> = ({ theme }) => {
+const Main = ({ theme }: MainProps) => {
   return (
     <main className={`main ${theme}`}>
       <div className="main-content">
