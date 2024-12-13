@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/restranger-web/static/css/main.e950b5f0.css",
-    "main.js": "/restranger-web/static/js/main.8d6b78f8.js",
+    "main.css": "/restranger-web/static/css/main.dde68925.css",
+    "main.js": "/restranger-web/static/js/main.4488e5e0.js",
     "static/js/453.dfe7bcc2.chunk.js": "/restranger-web/static/js/453.dfe7bcc2.chunk.js",
     "static/media/python.png": "/restranger-web/static/media/python.c44b9b809ebf766cbb4f.png",
+    "static/media/re-nvim.png": "/restranger-web/static/media/re-nvim.2a165b5d4a350cca702f.png",
+    "static/media/nixos-logo.png": "/restranger-web/static/media/nixos-logo.25e6c6b415f3b6d43e0f.png",
     "static/media/nix.png": "/restranger-web/static/media/nix.366735eca1e1d82d7e01.png",
     "static/media/linux.png": "/restranger-web/static/media/linux.efbd69901c0ffb6d2456.png",
     "static/media/rust.png": "/restranger-web/static/media/rust.222c8af9aea6974c9813.png",
+    "static/media/matrixx-phone.webp": "/restranger-web/static/media/matrixx-phone.9e4c29d2905f3e27916f.webp",
     "static/media/typescript.png": "/restranger-web/static/media/typescript.52ea0bc40ba11d507e7d.png",
+    "static/media/repack-me.jpg": "/restranger-web/static/media/repack-me.ab5ec0ed938129d580b1.jpg",
     "static/media/logo1024.svg": "/restranger-web/static/media/logo1024.614811516a3bc51bd2db5a07afd91e72.svg",
+    "static/media/github-brands-solid.svg": "/restranger-web/static/media/github-brands-solid.1db6174a39dd5625596f9878b3a68a4e.svg",
     "static/media/git.svg": "/restranger-web/static/media/git.29ee81f3816dc8c467d2fe7c26ba1f4c.svg",
+    "static/media/telegram-brands-solid.svg": "/restranger-web/static/media/telegram-brands-solid.5cf7a8c23d11cae9c9456e555129ee83.svg",
     "index.html": "/restranger-web/index.html",
     "static/media/code-solid.svg": "/restranger-web/static/media/code-solid.d88937af172a28fc0bb14f5ab2be9e04.svg",
+    "static/media/folder-open-solid.svg": "/restranger-web/static/media/folder-open-solid.437f2947faa05e27e3efb026d05b1e77.svg",
     "static/media/bolt-solid.svg": "/restranger-web/static/media/bolt-solid.1f2b78151f2f4e3d37738a5a042b0628.svg",
     "static/media/user-solid.svg": "/restranger-web/static/media/user-solid.2da295cf61e9d4db08e1ec78a873ac13.svg",
-    "main.e950b5f0.css.map": "/restranger-web/static/css/main.e950b5f0.css.map",
-    "main.8d6b78f8.js.map": "/restranger-web/static/js/main.8d6b78f8.js.map",
+    "main.dde68925.css.map": "/restranger-web/static/css/main.dde68925.css.map",
+    "main.4488e5e0.js.map": "/restranger-web/static/js/main.4488e5e0.js.map",
     "453.dfe7bcc2.chunk.js.map": "/restranger-web/static/js/453.dfe7bcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e950b5f0.css",
-    "static/js/main.8d6b78f8.js"
+    "static/css/main.dde68925.css",
+    "static/js/main.4488e5e0.js"
   ]
 }
