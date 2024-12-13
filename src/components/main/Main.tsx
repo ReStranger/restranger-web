@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/components/main/main.scss";
 import TypingEffect from "../../utils/TypingEffect";
 import AboutMe from "./about-me/AboutMe";
+import Projects from "./projects/Projects";
 
 interface MainProps {
   theme: "light" | "dark";
@@ -19,6 +20,7 @@ const Main = ({ theme }: MainProps) => {
           />
         </div>
         <AboutMe theme={theme} />
+        <Projects theme={theme} />
       </div>
     </main>
   );

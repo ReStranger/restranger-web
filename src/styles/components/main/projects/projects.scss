@@ -1,0 +1,19 @@
+@use "../../../variables" as *;
+
+.projects {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 15px;
+  padding: 1px 20px;
+  margin: 10px;
+  margin-top: 100px;
+  margin-top: 100px;
+
+  &.light {
+    background-color: $light-bg;
+  }
+
+  &.dark {
+
+    background-color: $dark-bg;
+  }
+}
